@@ -68,6 +68,25 @@ function direction(event){
     }
 }
 
+function directiontouch(key){
+    if(key == 37 && d!= "RIGHT"){
+        d = "LEFT";
+        left.play();
+    }
+    else if(key == 38 && d!="DOWN"){
+        d = "UP";
+        up.play();
+    }
+    else if(key == 39 && d!="LEFT"){
+        d = "RIGHT";
+        right.play();
+    }
+    else if(key == 40 && d!="UP"){
+        d = "DOWN";
+        down.play();
+    }
+}
+
 //checking collision with the wall
 
 function collision(head, array){
@@ -145,8 +164,26 @@ function draw(){
 //we have to call draw function every 100 ms
 
 let game = setInterval(draw, 100);
+
 function callin(){
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+modal.style.display = "block";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
     location.replace("index.html");
+}
+
+    //location.replace("index.html");
 }
 
 

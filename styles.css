@@ -35,13 +35,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #14192c;
+  background: #037c17;
 }
 
 .treat-button {
   outline:none ;
   font-family: "Fascinate Inline", cursive;
-  font-size: 4vmin;
+  font-size: 7vmin;
   appearance: none;
   background: linear-gradient(to bottom, #f46001, #e14802);
   border: none;
