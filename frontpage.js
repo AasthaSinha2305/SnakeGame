@@ -62,7 +62,7 @@ function createTreat() /* create a treat */ {
     remove() {
       this.animating = false;
       this.el.parentNode.removeChild(this.el);
-      location.replace("index1.html");
+      location.replace("game.html");
     },
 
     animate() {
